@@ -53,7 +53,10 @@
                     </a>
                 </div>                 
                 <div class="buy-button">
-                    <a href="signup.html" class="btn btn-primary">Signup</a>
+                    <a href="javascript:void(0)">
+                        <div class="btn btn-primary login-btn-primary">Signup</div>
+                        <div class="btn btn-light login-btn-light">Signup</div>
+                    </a>
                 </div><!--end login button-->
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -72,7 +75,7 @@
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
+                    <ul class="navigation-menu nav-light">
                         <li class="has-submenu">
                             <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
                             <ul class="submenu">
@@ -115,33 +118,63 @@
         <!-- Navbar End -->
 
         <!-- Hero Start -->
-        <section class="bg-home d-flex align-items-center app-dash overflow-hidden" style="height: auto;" id="home">
+        <section class="bg-half-170 d-flex bg-primary align-items-center" style="background: url('images/bg5.png') center center;" id="home">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center mt-md-5 pt-md-5">
-                        <div class="title-heading margin-top-100">
-                            <h1 class="heading my-3">We Build Awesome Apps That User Love</h1>
-                            <p class="para-desc mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                <div class="row mt-5 align-items-center position-relative" style="z-index: 1;">
+                    <div class="col-md-6">
+                        <div class="title-heading">
+                            <h1 class="heading mb-3">Creative & <br> Modern Agency</h1>
+                            <p class="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
                             <div class="watch-video mt-4">
-                                <a href="http://vimeo.com/99025203" class="video-play-icon btn btn-pills btn-primary watch">7:21 Min video <i class="mdi mdi-play play-icon-circle ml-2 text-center d-inline-block rounded-circle text-white bg-success position-relative play play-iconbar"></i></a>
+                                <a href="javascript:void(0)" class="btn btn-primary mb-2">Get Started</a>
+                                <a href="http://vimeo.com/99025203" class="video-play-icon watch text-dark mb-2 ml-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill text-white position-relative play play-iconbar"></i> Watch now !</a>
                             </div>
                         </div>
+                    </div><!--end col-->
 
-                        <div class="home-dashboard">
-                            <img src="images/app/app-2.png" alt="" class="img-fluid">
-                        </div>
+                    <div class="col-md-6">
+                        <img src="images/svg/Programming.svg" class="img-fluid" alt="">
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container--> 
+            </div><!--end container-->
         </section><!--end section-->
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
-        </div>
         <!-- Hero End -->
+
+        <!-- Client start -->
+        <section class="py-4 border-top border-bottom position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-01.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-02.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-03.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-04.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-05.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-3">
+                        <img src="images/client/client-06.png" class="avatar avatar-ex-sm partner-img" alt="">
+                    </div><!--end col-->
+
+                    <div class="home-shape-arrow">
+                        <a href="#service" class="scroll-down"><i class="mdi mdi-arrow-down arrow-icon bg-white text-dark h5"></i></a>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- Client end -->
 
         <!-- Start -->
         <section class="section" id="service">
@@ -253,7 +286,7 @@
                     </div><!--end col-->
 
                     <div class="col-12 text-center mt-4 pt-2">
-                        <a href="javascript:void(0)" class="btn btn-pills btn-primary">See More Features <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-primary">See More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
@@ -262,12 +295,12 @@
             <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <img src="images/app/mobile-3.png" class="img-fluid mover" alt="">
+                        <img src="images/svg/Instagram-video.svg" class="img-fluid" alt="">
                     </div><!--end col-->
 
                     <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="section-title">
-                            <h4 class="title mb-4">Easy and Perfect <br> Solution for your Apps</h4>
+                            <h4 class="title mb-4">Branding and <br> Digital Experience</h4>
                             <p class="text-muted para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
                             <ul class="list-unstyled">
                                 <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary mr-2"></i>Digital Marketing Solutions for Tomorrow</li>
@@ -275,7 +308,7 @@
                                 <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary mr-2"></i>Create your own skin to match your brand</li>
                             </ul>
                             <div class="watch-video mt-4">
-                                <a href="javascript:void(0)" class="btn btn-pills btn-primary mb-2 mr-2">Read More</a>
+                                <a href="javascript:void(0)" class="btn btn-primary mb-2 mr-2">Read More</a>
                                 <a href="http://vimeo.com/99025203" class="video-play-icon watch title-dark text-dark mb-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill text-white title-dark position-relative play play-iconbar"></i> Watch Now</a>
                             </div>
                         </div>
@@ -286,68 +319,22 @@
             <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-                        <img src="images/app/mobile-4.png" class="img-fluid mover" alt="">
+                        <img src="images/svg/Online-games.svg" class="img-fluid" alt="">
                     </div><!--end col-->
 
                     <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="section-title">
-                            <h4 class="title mb-4">Core Features : Appgen</h4>
+                            <h4 class="title mb-4">Increase your <br> Work Performance</h4>
                             <p class="text-muted para-desc">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
-                        </div>
-                        <div class="faq-content mt-4 pt-2">
-                            <div class="accordion" id="accordionExample2">
-                                <div class="card border rounded mb-2">
-                                    <a data-toggle="collapse" href="#collapsefour" class="faq position-relative" aria-expanded="true" aria-controls="collapsefour">
-                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingfour">
-                                            <div class="media">
-                                                <i data-feather="airplay" class="fea text-primary"></i>
-                                                <h6 class="title ml-3 mb-0"> Fully Responsive </h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div id="collapsefour" class="collapse show" aria-labelledby="headingfour" data-parent="#accordionExample2">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <ul class="list-unstyled">
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary mr-2"></i>Digital Marketing Solutions for Tomorrow</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary mr-2"></i>Our Talented & Experienced Marketing Agency</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary mr-2"></i>Create your own skin to match your brand</li>
+                            </ul>
 
-                                <div class="card border rounded mb-2">
-                                    <a data-toggle="collapse" href="#collapsefive" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsefive">
-                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingfive">
-                                            <div class="media">
-                                                <i data-feather="download-cloud" class="fea text-primary"></i>
-                                                <h6 class="title ml-3 mb-0"> Free Download </h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample2">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card border rounded">
-                                    <a data-toggle="collapse" href="#collapsesix" class="faq position-relative collapsed" aria-expanded="false" aria-controls="collapsesix">
-                                        <div class="card-header border-0 bg-light p-3 pr-5" id="headingsix">
-                                            <div class="media">
-                                                <i data-feather="user" class="fea text-primary"></i>
-                                                <h6 class="title ml-3 mb-0"> Support </h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample2">
-                                        <div class="card-body">
-                                            <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary">See More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                             </div>
-                        </div><!--end accordion-->
-
-                        <div class="mt-4 pt-2">
-                            <a href="javascript:void(0)" class="btn btn-pills btn-primary">See More <i data-feather="chevron-right" class="fea icon-sm"></i></a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -458,61 +445,33 @@
             </div><!--end container-->
             <!-- Review End -->
 
-            <!-- Showcase Start -->
-            <div class="container mt-100 mt-60" id="showcase">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="position-relative">
-                            <div id="owl-fade" class="owl-carousel owl-theme">
-                                <img src="images/saas/laptop-one.png" class="img-fluid mx-auto d-block" alt="">
-                                <img src="images/saas/laptop-two.png" class="img-fluid mx-auto d-block" alt="">
-                                <img src="images/saas/laptop-three.png" class="img-fluid mx-auto d-block" alt="">
-                                <img src="images/saas/laptop-four.png" class="img-fluid mx-auto d-block" alt="">
-                                <img src="images/saas/laptop-five.png" class="img-fluid mx-auto d-block" alt="">
+            <!-- Subscribe Start -->
+            <div class="container mt-100 mt-60">
+                <div class="py-5 px-4 bg-primary rounded-pill" style="background: url('images/map.png') center center;">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="section-title text-center mb-4 pb-2">
+                                <h4 class="title text-white mb-4">Subscribe our Newsletter</h4>
+                                <p class="text-white-50 mx-auto para-desc mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
                             </div>
-                            <div class="play-icon" style="z-index: 1;">
-                                <a href="http://vimeo.com/287684225" class="play-btn video-play-icon">
-                                    <i class="mdi mdi-play mdi-24px text-primary rounded-circle bg-primary shadow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+                        </div><!--end col-->
+
+                        <div class="col-lg-8">
+                            <div class="text-center subcribe-form mt-4 pt-2">
+                                <form>
+                                    <div class="form-group mb-0">
+                                        <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
+                                        <button type="submit" class="btn btn-pills btn-success">Subscribe Now</button>
+                                    </div>
+                                </form><!--end form-->
+                            </div><!--end subscribe form-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end div-->
             </div><!--end container-->
-            <!-- Showcase End -->
+            <!-- Subscribe End -->
         </section><!--end section-->
         <!-- End -->
-
-        <!-- Download Start -->
-        <section class="section bg-light" id="download">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h4 class="title mb-4">Download Now !</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
-                            
-                            
-
-                            <div class="mt-4 pt-3 mb-4">
-                                <a href="javascript:void(0)" class="btn btn-lg btn-pills btn-primary mt-2 mr-2"><i class="mdi mdi-apple"></i> App Store</a>
-                                <a href="javascript:void(0)" class="btn btn-lg btn-pills btn-primary mt-2"><i class="mdi mdi-google-play"></i> Play Store</a>
-                            </div>
-
-                            <div class="d-inline-block">
-                                <div class="pt-4 d-flex align-items-center border-top">
-                                    <i data-feather="smartphone" class="fea icon-md mr-2 text-primary"></i>
-                                    <div class="content text-left">
-                                        <p class="mb-0">Install app now on your cellphones</p>
-                                        <a href="javascript:void(0)" class="text-primary small">Learn More <i class="mdi mdi-arrow-right"></i></a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
         <div class="position-relative">
             <div class="shape overflow-hidden text-dark">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +479,6 @@
                 </svg>
             </div>
         </div>
-        <!-- Download End -->
 
         <!-- Footer Start -->
         <footer class="bg-dark py-5">
