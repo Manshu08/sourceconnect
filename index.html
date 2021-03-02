@@ -1,7 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
     <head>
         <meta charset="utf-8" />
         <title>BrandComputer - Everyday Content And Design Services on Demand</title>
@@ -22,9 +24,31 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
         <!-- Main css File -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
     </head>
 
     <body>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+    apiKey: "AIzaSyC0Gr76f3EmgkOwJUh0LXp8mlwt-aSEzvo",
+    authDomain: "new-forms1.firebaseapp.com",
+    projectId: "new-forms1",
+    storageBucket: "new-forms1.appspot.com",
+    messagingSenderId: "772747759011",
+    appId: "1:772747759011:web:c8cba08540cc3be8b71e16"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var database = firebase.database();
+      console.log(database)
+    </script>
+    <script src="form_submit.js"></script>
+
         <!-- Loader Start -->
         <div id="preloader">
             <div id="status">
@@ -130,10 +154,11 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <div class="text-center subcribe-form mt-4 pt-2">
-                                        <form action="https://formspree.io/f/mzbklzwb" method="POST">
+                                        <form id= "emailForm">
                                             <div class="form-group mb-0">
-                                                <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
-                                                <button type="submit" class="btn btn-primary">Get Started</button>
+                                                <input type="email" name="email_add" class="rounded-pill" placeholder="Your Email Id">
+
+                                                <button value="submit" type="button" id="sub" class="btn btn-primary" value= "submit_button" id="sub" onclick="saveToFirebase()" >Get Started</button>
                                             </div>
                                         </form><!--end form-->
                                     </div><!--end subscribe form-->
@@ -464,8 +489,8 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="section-title text-center mb-4 pb-2">
-                                <h4 class="title text-white mb-4">Subscribe our Newsletter</h4>
-                                <p class="text-white-50 mx-auto para-desc mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                                <h4 class="title text-white mb-4">Launch your campaign and benefit from our expertise in designing and managing conversion centered Content Strategy</h4>
+                                <!-- <p class="text-white-50 mx-auto para-desc mb-0">Launch your campaign and benefit from our expertise in designing and managing conversion centered Content Strategy.</p> -->
                             </div>
                         </div><!--end col-->
 
@@ -474,7 +499,7 @@
                                 <form>
                                     <div class="form-group mb-0">
                                         <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
-                                        <button type="submit" class="btn btn-pills btn-success">Subscribe Now</button>
+                                        <button type="submit" class="btn btn-pills btn-success">Get Started</button>
                                     </div>
                                 </form><!--end form-->
                             </div><!--end subscribe form-->
@@ -492,7 +517,7 @@
                             <a class="logo logo-footer" href="#">
                                 <img src="images/logo-light.png" height="25" alt="">
                             </a>
-                            <p class="text-muted para-desc mx-auto mt-3">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                            <p class="text-muted para-desc mx-auto mt-3">Launch your campaign and benefit from our expertise in designing and managing conversion centered Content Strategy</p>
                             <ul class="list-unstyled social-icon social mb-0 mt-4">
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
@@ -513,7 +538,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <p class="mb-0 footer-text para-desc mx-auto">© 2020 Appgen. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="http://www.shreethemes.in" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        <p class="mb-0 footer-text para-desc mx-auto">© 2021 BrandComputer</p>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
