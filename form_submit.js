@@ -19,16 +19,13 @@ function saveToFirebase()
 
 function ValidateEmail(mail) 
 {
-    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail))
-        {
-          pass();
-          return (true);
-        }
-    else{
-          fail();
-          return (false);
-          }
-} 
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
 
 
 function fail()
