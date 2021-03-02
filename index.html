@@ -161,6 +161,7 @@
                                                 <button value="submit" type="button" id="sub" class="btn btn-primary" value= "submit_button" id="sub" onclick="saveToFirebase()" >Get Started</button>
                                             </div>
                                         </form><!--end form-->
+                                        <div id="success_msg" style="display:none; padding:10px;" ><p class="para-desc mx-auto">Thank you for providing your email, we will get in touch with you shortly! </div>
                                     </div><!--end subscribe form-->
                                 </div><!--end column-->
                             </div><!--end-->
@@ -496,20 +497,22 @@
 
                         <div class="col-lg-8">
                             <div class="text-center subcribe-form mt-4 pt-2">
-                                <form>
-                                    <div class="form-group mb-0">
-                                        <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
-                                        <button type="submit" class="btn btn-pills btn-success">Get Started</button>
-                                    </div>
-                                </form><!--end form-->
-                            </div><!--end subscribe form-->
+                                <form id= "emailForm">
+                                            <div class="form-group mb-0">
+                                                <input type="email" name="email_add" class="rounded-pill" placeholder="Your Email Id">
+
+                                                <button value="submit" type="button" id="sub" class="btn btn-primary" value= "submit_button" id="sub" onclick="saveToFirebase()" >Get Started</button>
+                                            </div>
+                                        </form><!--end form-->
+                                        <div id="success_msg" style="display:none; padding:10px;" ><p class="para-desc mx-auto">Thank you for providing your email, we will get in touch with you shortly! </div><!--end subscribe form-->
                         </div><!--end col-->
                     </div><!--end row-->
                 </div><!--end div-->
             </div><!--end container-->
-
+            <div><br><br></div>
+            <div><br><br></div>
         <!-- Footer Start -->
-        <footer class="bg-dark py-5">
+        <!-- <footer class="bg-dark py-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 mb-3">
@@ -523,17 +526,17 @@
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                            </ul><!--end icon-->
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+                            </ul><end icon-->
+                        <!-- </div> -->
+                    <!-- </div> --><!--end col-->
+                <!-- </div> --><!--end row-->
+            <!-- </div> --><!--end container-->
             <!-- Back to top -->    
-            <a href="#" class="back-to-top" id="back-to-top" title="Top"> 
+            <!-- <a href="#" class="back-to-top" id="back-to-top" title="Top"> 
                 <i class="mdi mdi-arrow-up icons bg-light text-dark"> </i> 
-            </a>
+            </a> -->
             <!-- Back to top -->
-        </footer><!--end footer-->
+        <!-- </footer> --> <!--end footer-->
         <footer class="footer-bar bg-dark">
             <div class="container">
                 <div class="row justify-content-center">

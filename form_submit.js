@@ -7,12 +7,13 @@ function saveToFirebase()
   {
     database.ref('emails').push({ email: data}).then(function(snapshot) {
       pass(); // some success method
+      document.getElementById('success_msg').style.display = "block"
       }, function(error) 
          {
             console.log('error' + error);
             fail(); // some error method
           });
-     // document.getElementById('emailForm').reset();
+     document.getElementById('emailForm').reset();
   }
 
 }
