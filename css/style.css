@@ -1943,14 +1943,14 @@ button:not(:disabled) {
   padding-right: 10px;
 }
 
-#topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a:active {
+#topnav .navigation-menu > li > #topnav .navigation-menu > li > a:active {
   color: #0666db;
 }
 
-#topnav .navigation-menu > li:hover > a,
+/*#topnav .navigation-menu > li:hover > a,
 #topnav .navigation-menu > li.active > a {
   color: #0666db !important;
-}
+}*/
 
 #topnav .navigation-menu .has-submenu .menu-arrow {
   border: solid #3c4858;
